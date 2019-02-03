@@ -8,8 +8,8 @@ source "$ZSH/git.zsh"
 source "$ZSH/plugins.zsh"
 source "$ZSH/theme.zsh"
 
-if [[ -a ~/.localrc ]]; then
-    source ~/.localrc
+if [[ -a ~/.zshrc.local ]]; then
+    source ~/.zshrc.local
 fi
 
 # initialize autocomplete
