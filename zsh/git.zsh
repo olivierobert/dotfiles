@@ -4,6 +4,8 @@ alias gs='git status'
 alias gco='g checkout'
 alias gpush='g push origin $(current_branch)'
 
+alias gprune='git branch --merged | egrep -v "(^\*|master|dev|develop|development)" | xargs git branch -d'
+
 function g() {
     if [[ $# > 0 ]]; then
         # if there are arguments, send them to git
