@@ -46,5 +46,8 @@ alias b="bundle"
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
 
+# Docker
+alias dstop='docker kill $(docker ps -q)'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
